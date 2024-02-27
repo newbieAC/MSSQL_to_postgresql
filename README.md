@@ -20,15 +20,16 @@ To simplify the migration process, MS SQL Server Management Studio seems an easy
 
   <img src="https://github.com/newbieAC/MSSQL_to_postgresql/blob/main/screen/MSSQL_memory_issue.jpg" width="400" height="400">
 
-Manually compiling sql statements is mandatory in either solutions. To speed up the process, I have done below activites to minimize the manually processes.
+Therefore, manually compiling sql statements is mandatory in either solutions. To speed up the process, I have done below activites to minimize the manually processes.
 * Installed the DSM with postgresql 14.10 on temporary server
 * Dump the database / schema structure to sql from postgresql on temporary server
   * This approach can skip the manual handling effort for the database's tables
 * Install the postgresql on target database server
 * Create the database / schema by dumped sql on target database server
 * Write a script to generate the export data MSSQL sql statements based on the dumped sql information to:-
-  * Select table column in sequences
-  * handle the null data, data format and special charters based on the datatype
+  * Select columns based on the sequence of the target table
+  * Handle the null data, data format of each datatype
+  * Handle the error of specified table by replacing special characters of theirs
   * This approach can minimize the manual work for the data
 * Use the generated sql statements to export the data by table
 * Import the data to posgresql directly
