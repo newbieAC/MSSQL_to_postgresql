@@ -203,7 +203,7 @@ To create the database by dumped sql statement, psql utility will be used:
     database.SqlServer.driver=MSJDBC
     install.precheckListFilename=C\:\\Program Files\\Trend Micro\\Deep Security Manager\\installfiles\\prechecker_list.json
     install.latestSecurityUpdateMapFilename=C\:\\Program Files\\Trend Micro\\Deep Security Manager\\installfiles\\latest_dsru_map.csv
-    database.SqlServer.password=$1$c8871d501581ec514b683aa6d079fe51f4ffeb9646cbad52a382d4730fb153338d6d28a5aeb0260e8cb806e745593f93e62b4f49d9b5f3fae2ce413f9b9e8886
+    database.SqlServer.password=<admin password>
     database.type=SqlServer
     install.contentStringsFilename=C\:\\Program Files\\Trend Micro\\Deep Security Manager\\installfiles\\ContentStrings.properties
     database.SqlServer.server=<server name / server IP>
